@@ -59,7 +59,7 @@ function main(config) {
   const NETFLIX = "Netflix";
   const ONEDRIVE = "OneDrive";
   const GAME = "Game";
-  const APPLE_MAIL = "Apple Mail";
+  const APPLE_MAIL = "Mail";
   const AD_BLOCK = "Ad Block";
   const PURE = "Pure";
   const FINAL = "Final";
@@ -272,7 +272,7 @@ function main(config) {
   // 2. 定义规则集源 (Rule Providers)
   const ruleProviders = {
     LocalAreaNetwork: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/LocalAreaNetwork.list",
       path: "./ruleset/LocalAreaNetwork.list",
       behavior: "classical",
       interval: 86400,
@@ -280,7 +280,7 @@ function main(config) {
       type: "http",
     },
     UnBan: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/UnBan.list",
       path: "./ruleset/UnBan.list",
       behavior: "classical",
       interval: 86400,
@@ -288,7 +288,7 @@ function main(config) {
       type: "http",
     },
     BanAD: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/BanAD.list",
       path: "./ruleset/BanAD.list",
       behavior: "classical",
       interval: 86400,
@@ -296,7 +296,7 @@ function main(config) {
       type: "http",
     },
     BanProgramAD: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/BanProgramAD.list",
       path: "./ruleset/BanProgramAD.list",
       behavior: "classical",
       interval: 86400,
@@ -304,7 +304,7 @@ function main(config) {
       type: "http",
     },
     GoogleFCM: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/GoogleFCM.list",
       path: "./ruleset/GoogleFCM.list",
       behavior: "classical",
       interval: 86400,
@@ -312,7 +312,7 @@ function main(config) {
       type: "http",
     },
     GoogleCN: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/GoogleCN.list",
       path: "./ruleset/GoogleCN.list",
       behavior: "classical",
       interval: 86400,
@@ -320,7 +320,7 @@ function main(config) {
       type: "http",
     },
     Google: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Google.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Google.list",
       path: "./ruleset/Google.list",
       behavior: "classical",
       interval: 86400,
@@ -328,23 +328,15 @@ function main(config) {
       type: "http",
     },
     SteamCN: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/SteamCN.list",
       path: "./ruleset/SteamCN.list",
       behavior: "classical",
       interval: 86400,
       format: "text",
       type: "http",
     },
-    Bing: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list",
-      path: "./ruleset/Bing.list",
-      behavior: "classical",
-      interval: 86400,
-      format: "text",
-      type: "http",
-    },
     OneDrive: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/OneDrive.list",
       path: "./ruleset/OneDrive.list",
       behavior: "classical",
       interval: 86400,
@@ -352,7 +344,7 @@ function main(config) {
       type: "http",
     },
     Microsoft: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Microsoft.list",
       path: "./ruleset/Microsoft.list",
       behavior: "classical",
       interval: 86400,
@@ -360,7 +352,7 @@ function main(config) {
       type: "http",
     },
     Apple: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Apple.list",
       path: "./ruleset/Apple.list",
       behavior: "classical",
       interval: 86400,
@@ -368,7 +360,7 @@ function main(config) {
       type: "http",
     },
     Telegram: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Telegram.list",
       path: "./ruleset/Telegram.list",
       behavior: "classical",
       interval: 86400,
@@ -383,8 +375,24 @@ function main(config) {
       format: "text",
       type: "http",
     },
+    Anthropic: {
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Anthropic.list",
+      path: "./ruleset/Anthropic.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http",
+    },
+    Gemini: {
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Gemini.list",
+      path: "./ruleset/Gemini.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http",
+    },
     NetEaseMusic: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/NetEaseMusic.list",
       path: "./ruleset/NetEaseMusic.list",
       behavior: "classical",
       interval: 86400,
@@ -392,7 +400,7 @@ function main(config) {
       type: "http",
     },
     Epic: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Epic.list",
       path: "./ruleset/Epic.list",
       behavior: "classical",
       interval: 86400,
@@ -400,7 +408,7 @@ function main(config) {
       type: "http",
     },
     Origin: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Origin.list",
       path: "./ruleset/Origin.list",
       behavior: "classical",
       interval: 86400,
@@ -408,7 +416,7 @@ function main(config) {
       type: "http",
     },
     Sony: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Sony.list",
       path: "./ruleset/Sony.list",
       behavior: "classical",
       interval: 86400,
@@ -416,7 +424,7 @@ function main(config) {
       type: "http",
     },
     Steam: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Steam.list",
       path: "./ruleset/Steam.list",
       behavior: "classical",
       interval: 86400,
@@ -424,7 +432,7 @@ function main(config) {
       type: "http",
     },
     Nintendo: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Nintendo.list",
       path: "./ruleset/Nintendo.list",
       behavior: "classical",
       interval: 86400,
@@ -432,15 +440,23 @@ function main(config) {
       type: "http",
     },
     YouTube: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/YouTube.list",
       path: "./ruleset/YouTube.list",
       behavior: "classical",
       interval: 86400,
       format: "text",
       type: "http",
     },
+    Mail: {
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Mail.list",
+      path: "./ruleset/Mail.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http",
+    },
     Netflix: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Netflix.list",
       path: "./ruleset/Netflix.list",
       behavior: "classical",
       interval: 86400,
@@ -448,7 +464,7 @@ function main(config) {
       type: "http",
     },
     Bahamut: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Bahamut.list",
       path: "./ruleset/Bahamut.list",
       behavior: "classical",
       interval: 86400,
@@ -456,7 +472,7 @@ function main(config) {
       type: "http",
     },
     BilibiliHMT: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/BilibiliHMT.list",
       path: "./ruleset/BilibiliHMT.list",
       behavior: "classical",
       interval: 86400,
@@ -464,7 +480,7 @@ function main(config) {
       type: "http",
     },
     Bilibili: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Bilibili.list",
       path: "./ruleset/Bilibili.list",
       behavior: "classical",
       interval: 86400,
@@ -472,7 +488,7 @@ function main(config) {
       type: "http",
     },
     ChinaMedia: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/ChinaMedia.list",
       path: "./ruleset/ChinaMedia.list",
       behavior: "classical",
       interval: 86400,
@@ -480,7 +496,7 @@ function main(config) {
       type: "http",
     },
     ProxyMedia: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/ProxyMedia.list",
       path: "./ruleset/ProxyMedia.list",
       behavior: "classical",
       interval: 86400,
@@ -488,7 +504,7 @@ function main(config) {
       type: "http",
     },
     ProxyGFWlist: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/ProxyGFWlist.list",
       path: "./ruleset/ProxyGFWlist.list",
       behavior: "classical",
       interval: 86400,
@@ -496,7 +512,7 @@ function main(config) {
       type: "http",
     },
     ChinaDomain: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/ChinaDomain.list",
       path: "./ruleset/ChinaDomain.list",
       behavior: "domain",
       interval: 86400,
@@ -504,7 +520,7 @@ function main(config) {
       type: "http",
     },
     ChinaCompanyIp: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/ChinaCompanyIp.list",
       path: "./ruleset/ChinaCompanyIp.list",
       behavior: "ipcidr",
       interval: 86400,
@@ -512,7 +528,7 @@ function main(config) {
       type: "http",
     },
     Download: {
-      url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/Download.list",
       path: "./ruleset/Download.list",
       behavior: "classical",
       interval: 86400,
@@ -520,16 +536,8 @@ function main(config) {
       type: "http",
     },
     Private: {
-      url: "https://raw.githubusercontent.com/KynixInHK/rulelist/refs/heads/main/private.list",
+      url: "https://raw.githubusercontent.com/KynixInHK/subscription/refs/heads/main/private.list",
       path: "./ruleset/Private.list",
-      behavior: "classical",
-      interval: 86400,
-      format: "text",
-      type: "http",
-    },
-    Anthropic: {
-      url: "https://raw.githubusercontent.com/KynixInHK/rulelist/refs/heads/main/Claude.list",
-      path: "./ruleset/Anthropic.list",
       behavior: "classical",
       interval: 86400,
       format: "text",
@@ -539,42 +547,42 @@ function main(config) {
 
   // 3. 定义分流规则 (Rules)
   const rules = [
-    "IP-CIDR,70.39.181.206/32,DIRECT",
-    "IP-CIDR,70.39.181.198/32,DIRECT",
     "RULE-SET,LocalAreaNetwork,DIRECT",
     "RULE-SET,UnBan,DIRECT",
-    "RULE-SET,BanAD,广告拦截",
-    "RULE-SET,BanProgramAD,应用净化",
-    "RULE-SET,GoogleFCM,Google",
-    "RULE-SET,Google,Google",
+    `RULE-SET,BanAD,${AD_BLOCK}`,
+    `RULE-SET,BanProgramAD,${PURE}`,
+    `RULE-SET,GoogleFCM,${GOOGLE}`,
+    `RULE-SET,Google,${GOOGLE}`,
     "RULE-SET,GoogleCN,DIRECT",
     "RULE-SET,SteamCN,DIRECT",
-    "RULE-SET,Bing,Microsoft Bing",
-    "RULE-SET,OneDrive,Microsoft OneDrive",
-    "RULE-SET,Microsoft,Microsoft",
-    "RULE-SET,Apple,Apple",
-    "RULE-SET,Telegram,Telegram",
-    "RULE-SET,OpenAI,OpenAI",
-    // "RULE-SET,Anthropic,Anthropic",
-    "RULE-SET,Epic,游戏平台",
-    "RULE-SET,Origin,游戏平台",
-    "RULE-SET,Sony,游戏平台",
-    "RULE-SET,Steam,游戏平台",
-    "RULE-SET,Nintendo,游戏平台",
-    "RULE-SET,YouTube,YouTube",
-    "RULE-SET,Netflix,Netflix",
-    "RULE-SET,Bahamut,巴哈姆特",
-    "RULE-SET,BilibiliHMT,哔哩哔哩",
-    "RULE-SET,Bilibili,哔哩哔哩",
-    "RULE-SET,ChinaMedia,国内媒体",
-    "RULE-SET,ProxyMedia,国外媒体",
-    "RULE-SET,ProxyGFWlist,漏网之鱼",
+    `RULE-SET,OneDrive,${ONEDRIVE}`,
+    `RULE-SET,Microsoft,${MICROSOFT}`,
+    `RULE-SET,Apple,${APPLE}`,
+    `RULE-SET,Mail,${APPLE_MAIL}`,
+    `RULE-SET,Telegram,${FINAL}`,
+    `RULE-SET,OpenAI,${CHATGPT}`,
+    `RULE-SET,Anthropic,${CLAUDE}`,
+    `RULE-SET,Gemini,${GEMINI}`,
+    `RULE-SET,Epic,${GAME}`,
+    `RULE-SET,Origin,${GAME}`,
+    `RULE-SET,Sony,${GAME}`,
+    `RULE-SET,Steam,${GAME}`,
+    `RULE-SET,Nintendo,${GAME}`,
+    `RULE-SET,YouTube,${GOOGLE}`,
+    `RULE-SET,Netflix,${NETFLIX}`,
+    `RULE-SET,Bahamut,${GAME}`,
+    `RULE-SET,BilibiliHMT,${BILIBILI}`,
+    `RULE-SET,Bilibili,${BILIBILI}`,
+    `RULE-SET,ChinaMedia,${CHINAMEDIA}`,
+    `RULE-SET,ProxyMedia,${GLOBALMEDIA}`,
+    `RULE-SET,ProxyGFWlist,${FINAL}`,
     "RULE-SET,ChinaDomain,DIRECT",
     "RULE-SET,ChinaCompanyIp,DIRECT",
     "RULE-SET,Download,DIRECT",
+    "RULE-SET,NetEaseMusic,DIRECT",
     "RULE-SET,Private,DIRECT",
     "GEOIP,CN,DIRECT",
-    "MATCH,漏网之鱼",
+    `MATCH,${FINAL}`,
   ];
 
   // 4. 执行覆写操作

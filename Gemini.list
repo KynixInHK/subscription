@@ -1,0 +1,8 @@
+# Google Gemini Only
+# 仅适用于 Gemini，不影响其他 Google 服务
+
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,generativelanguage.googleapis.com

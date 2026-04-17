@@ -1,0 +1,31 @@
+# 内容：OpenAI 全网域名（网页 + 移动 App 相关）
+# 数量：约 30 条
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,cdn.openai.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,platform.openai.com
+DOMAIN-SUFFIX,help.openai.com
+DOMAIN-SUFFIX,community.openai.com
+DOMAIN-SUFFIX,status.openai.com
+DOMAIN-SUFFIX,accounts.openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com           # 高价值域名，已被 OpenAI 收购 :contentReference[oaicite:1]{index=1}
+DOMAIN-SUFFIX,sora.com           # 社区称 OpenAI 持有，用于 Sora 项目 :contentReference[oaicite:2]{index=2}
+DOMAIN-SUFFIX,sora.chatgpt.com   # 社区抓包建议 :contentReference[oaicite:3]{index=3}
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,cdn-auth0.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,revenuecat.com         # 移动 App 内付费/订阅可能使用
+DOMAIN-SUFFIX,stripe.com           # 支付／订阅处理 SDK 可能用到
+IP-CIDR,104.18.0.0/15,no-resolve
+IP-CIDR,104.16.0/12,no-resolve

@@ -1,0 +1,22 @@
+# Mail Protocol
+DOMAIN,imap.gmail.com
+DOMAIN,smtp.gmail.com
+DOMAIN,imap.mail.yahoo.com
+DOMAIN,smtp.mail.yahoo.com
+
+# Apple Mail support
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN,imap.mail.me.com
+DOMAIN,smtp.mail.me.com
+IP-CIDR,17.0.0.0/8,no-resolve
+
+# Samsung Mail support
+DOMAIN-SUFFIX,samsung.com
+DOMAIN-SUFFIX,samsungcloud.com
+DOMAIN-SUFFIX,samsungosp.com
+DOMAIN-SUFFIX,samsungconsent.com
+DOMAIN-SUFFIX,samsung-mail.com
