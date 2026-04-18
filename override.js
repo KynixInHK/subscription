@@ -128,7 +128,7 @@ function main(config) {
       icon: "https://picnornal.kynix.tw/Korea.png",
       "include-all": true,
       filter:
-        "(?i)(?=.*主要)(?=.*(韩国|韓國|South Korea|Republic of Korea|ROK|\bKR\b|KOR)).*",
+        "(?i)(?=.*主要)(?=.*(韩国|韓國|South Korea|Republic of Korea|ROK|\\bKR\\b|KOR)).*",
       type: "url-test",
       interval: 300,
       tolerance: 50,
