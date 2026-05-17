@@ -1,8 +1,10 @@
 # 山东大学
 DOMAIN-SUFFIX,sdu.edu.cn
 DOMAIN-SUFFIX,css.sdu.edu.cn
+DOMAIN-SUFFIX,kmv.kynix.tw
 
 # 云服务器
 IP-CIDR,198.23.238.42/32,no-resolve
 IP-CIDR,221.12.22.187/32,no-resolve
 IP-CIDR,10.17.116.45/32,no-resolve
+IP-CIDR,202.60.232.10/32,no-resolve
